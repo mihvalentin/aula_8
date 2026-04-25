@@ -1,8 +1,8 @@
 const formulario = document.getElementById ("formulario");
 const nome = document.getElementById ("nome");
-const telefone = document.getElementById ("telefone");
+const telefone = document.getElementById ("Telefone");
 const senha = document.getElementById ("senha");  
-const confirma = document.getElementById ("confirma");  
+const confirmar = document.getElementById ("confirmar");  
 const mensagem = document.getElementById ("mensagem");    
 
 
@@ -19,7 +19,7 @@ formulario.addEventListener("submit", function(e) {
         mensagem.style.color = "red";
     }else if (senha.value !== confirmar.value){
         mensagem.textContent = "As senhas não coincidem";
-        mensagem.style.color = "red"
+        mensagem.style.color = "red";
         mensagem.style.background = "black";
     }else{
         mensagem.textContent = "Cadastro Realizado com Sucesso!!!!!!!";
